@@ -1,0 +1,13 @@
+name: Uat Server Deployment 
+on: 
+    push:
+        branches: [uat]
+jobs:
+    codedeploy:
+        runs-on: self-hosted
+        steps:
+            - uses: actions/checkout@v2
+            - name: build fornend
+              run: |
+                echo 123
+  
